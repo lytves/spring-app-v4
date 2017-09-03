@@ -9,6 +9,8 @@ public class SimpleProductManager implements ProductManager, Serializable{
 
     private static final long serialVersionUID = 1L;
 
+    private List<Product> products;
+
     public void increasePrice(int percentage) {
 
         //not implemented yet
@@ -16,12 +18,10 @@ public class SimpleProductManager implements ProductManager, Serializable{
     }
 
     public List<Product> getProducts() {
-
-        //not implemented yet
-        throw new UnsupportedOperationException();
+        return products;
     }
 
     public void setProducts(List<Product> products) {
-        throw new UnsupportedOperationException();
+        this.products = products;
     }
 }
