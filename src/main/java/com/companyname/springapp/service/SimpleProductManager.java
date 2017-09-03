@@ -10,10 +10,14 @@ public class SimpleProductManager implements ProductManager, Serializable{
     private static final long serialVersionUID = 1L;
 
     public void increasePrice(int percentage) {
+
+        //not implemented yet
         throw new UnsupportedOperationException();
     }
 
     public List<Product> getProducts() {
+
+        //not implemented yet
         throw new UnsupportedOperationException();
     }
 
