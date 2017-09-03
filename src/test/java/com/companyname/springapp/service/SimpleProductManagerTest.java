@@ -88,6 +88,7 @@ public class SimpleProductManagerTest {
         }
 
     }
+    
     @Test
     public void testIncreasePriceWithPositivePercentage() {
         productManager.increasePrice(POSITIVE_PRICE_INCREASE);
