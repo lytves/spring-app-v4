@@ -40,4 +40,8 @@ public class InventoryController {
         return new ModelAndView("hello", "model", myModel);
 
     }
+
+    public void setProductManager(ProductManager productManager) {
+        this.productManager = productManager;
+    }
 }
