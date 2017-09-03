@@ -13,8 +13,13 @@ public class SimpleProductManager implements ProductManager, Serializable{
 
     public void increasePrice(int percentage) {
 
-        //not implemented yet
-        throw new UnsupportedOperationException();
+        if (products != null) {
+            for (Product product : products) {
+                double newPrice = product.getPrice().doubleValue() *
+                        (100 + percentage)/100;
+                product.setPrice(newPrice);
+            }
+        }
     }
 
     public List<Product> getProducts() {
